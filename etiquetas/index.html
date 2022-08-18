@@ -9,21 +9,32 @@
 <body>
 
     <style>
+        h1{
+            font-family: fantasy;
+        }
         h3{
-            color: darkslateblue;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(255, 0, 179);
+            font-family: monospace;
+            font-weight: lighter;
+            font-size: x-large;
         }
         li{
             list-style: upper-roman;
-            color: darkslateblue;
-            font-weight: bolder;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(255, 0, 179);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: black; 
         }
     </style>
 
-    <h1 style="color: darkblue; text-align: center;"><strong>Algunas etiquetas de html.</strong></h1>
+    <h1 style="color: darkblue; text-align: center;">Algunas etiquetas de HTML.</h1>
+    <p>
+        Las etiquetas HTML son fragmentos de código que nos permiten crear elementos HTML. Los elementos son la estructura básica de HTML, dichos elementos tienen dos propiedades básicas: <i>atributos</i> y <i>contenido</i>. 
+    </p>
     <ul>
-        <li><h3><strong>&lt; a &gt;</strong> Insertar un link.</h3></li>
+        <li><h3>&lt;a&gt; Insertar un link.</h3></li>
         <p>
             La eiqueta <i>&lt;a&gt;</i> nos sirve para crear un enlace a otras páginas de internet, archivos o ubicaciones. <br>
             Ejemplo: <br>
@@ -32,13 +43,173 @@
             <a href = "https://www.youtube.com/"> Soy un link de YouTube </a>
         </p>
 
-        <li><h3><strong>&lt; abbr &gt;</strong> Colocar una abriviatura.</h3></li>
+        <li><h3>&lt;abbr&gt; Colocar una abreviatura.</h3></li>
         <p>
             La etiqueta <i>&lt;abbr&gt;</i> nos sirve para poder realizar alguna abreviatura.<br>
             Ejemplo: <br>
             <i>&lt;abbr title = "National Aeronautics and Space Administration" &gt;NASA&lt;/abbr&gt;</i> <br>
             Lo anterior se ve así (coloca el cursor sobre la palabra NASA): <br>
             <abbr title = "National Aeronautics and Space Administration">NASA</abbr>
+        </p>
+
+        <li><h3>&lt;address&gt; Autor.</h3></li>
+        <p>
+            Define la información de contacto del autor/propietario de un documento u artículo.<br>
+            Ejemplo:<br>
+            <address>
+                Escrito por <a href = "https://github.com/MarcoAntonioMndz"> Marco</a>.
+            </address>
+
+        </p>
+
+        <li><h3>&lt;article&gt; Artículo.</h3></li>
+        <p>
+            Un artículo debe tener sintido por sí mismo y debe ser posible distriburilo independientemente del resto
+            del sitio.
+            Fuentes potenciales para el elemeto <i>article</i>:
+            <ul>
+                <li style="list-style: circle; color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Publicación en el foro</li>
+                <li style="list-style: circle; color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Entrada en el blog</li>
+                <li style="list-style: circle; color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Noticia</li>
+            </ul>
+            <br>
+            <strong>NOTA:</strong> <i>article</i> no se muestra como algo especial en un navegaror.Sin embargo, puede usar CSS para
+            darle diseño. <br>
+            <a href = "example/article.html">Ejemplo article con CSS.</a>
+        </p>
+
+        <li><h3>&lt;aside&gt;</h3></li>
+        <p>
+            Define algún contenido además del contenido en el que se coloca. El contenido aparte debe estar
+            indirectamente relacionado con el continido circulante. <br> <br>
+            <strong>Sugerencia:</strong> <i>aside</i> se coloca a menudo como una barra lateral en un documento. <br>
+           <strong>Nota:</strong> Este elemento no se muestra como algo especial en el navegador. Sin embargo, puede usar CSS para
+            diseñar el <i>aside</i>. <br>
+            <a href = "example/aside.html">Ejemplo aside con CSS.</a>
+        </p>
+
+        <li><h3>&lt;audio&gt;</h3></li>
+        <p>
+            Agrega controles de audio, como reproducción, pausa y volumen. El source permite especificar
+            archivos de audio alternativos entro los que puede elegirl el navegador. <br>
+            Ejemplo:<br> <br>
+            <audio controls>
+                <source src="audio/teclado-mecanografia.mp3" type="audio/mpeg">
+            </audio>
+        </p>
+
+        <li><h3>&lt;button&gt; Botón.</h3></li>
+        <p>
+            Define un botón en el que se puede hacer clic. Dentro de un <i>button</i> puedes poner texto (y etiquteas como &lt;i&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;img&gt;, etc ). Eso no es
+            posible con un botón creado con el &lt;input&gt;. <br> <br>
+            <strong>Sugerencia:</strong> Especifique siembre el <i>type</i> de un <i>button</i>, para indicar a los navegadores qué tipo de botón
+            es. <br>
+            <strong>Consejo:</strong> Puede diseñar botones facilmente con CSS. <br>
+            Ejemplo: <br> <br>
+            <button style="background-color: #4CAF50;">Botón 1</button>
+            <button style="background-color: #008CBA;">Botón 2</button>
+        </p>
+
+        <li><h3>&lt;form&gt; Colocar una abriviatura.</h3></li>
+        <p>
+            Es un contenedor para diferentes tipo de elementos de entrada, como: campos de texto, casillas de
+            verificación, botones de opción, botonees de envío, etc.
+        </p>
+
+        <li><h3>&lt;footer&gt; Pie de página.</h3></li>
+        <p>
+            Define un pie de página para un documento o sección, normalmente contien:
+            <ul>
+                <li style="list-style: circle; color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Información de autoría.</li>
+                <li style="list-style: circle; color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Información de registro.</li>
+                <li style="list-style: circle; color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Información del contacto.</li>
+                <li style="list-style: circle; color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Mapa del sitio.</li>
+                <li style="list-style: circle; color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Volver a los enlaces superiores.</li>
+                <li style="list-style: circle; color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Documentos relacionados.</li>
+            </ul>
+            <br>
+            <a href = "example/footer.html">Ejemplo footer.</a>
+        </p>
+
+        <li><h3>&lt;header&gt; Colocar una abriviatura.</h3></li>
+        <p>
+            Representa un contenedor de contenido introductorio o un conjunto de enlaces de navegación.
+            Normalmente contiene:
+            Uno a más elementos de encabezado (h1 - h6)
+            Logotipo o icono
+            información de autoría
+            NOTA:Puede tener varios <header> en un documento HTML. Sin embargo, no sepuede colocar
+            dentro de un <footer>, <address> u otro <header>
+            Ejemplo
+        </p>
+
+        <li><h3>&lt;hgroup&gt;Colocar una abriviatura.</h3></li>
+        <p>
+            Generalmente se usa para agrupar un conjunto d euno o más elementos h1 - h6, para agrupar, por
+            ejemplo, un titulo de sección y un subtitulo adjunto.
+                
+        </p>
+
+        <li><h3>&lt;h1&gt; - &lt;h6&gt; Colocar una abriviatura.</h3></li>
+        <p>
+            Se utilizan para definir encabezados HTML.
+            Ejemplo
+        </p>
+
+        <li><h3>&lt;img&gt; Colocar una abriviatura.</h3></li>
+        <p>
+            Se utiliza para incrustar una imagen en una página HTML. 
+            Técnicamente, las imágenes no se insertan en una página web; las imágenes están vinculadas a páginas
+            web. La etiqueta ima crea un espacio de espera para la imagen de referencia.
+            Tiene atributos obligatorios:
+            src: especifica la ruta a la imagen
+            alt: especifica un texto alternativo para la imagen, si la imagen por algún motivo no se puede
+            mostrar
+
+        <li><h3>&lt;map&gt; Colocar una abriviatura.</h3></li>
+        <p>
+            Se utiliza para definir un mapa de imagen, es una imagen con áreas en las que se puede hacer clic. 
+            El atributo de nombre requerido del map esta asocioado con el atributo usemap de img y crea una
+            relación entre la imagen y el mapa
+        </p>
+
+        <li><h3>&lt;nav&gt; Colocar una abriviatura.</h3></li>
+        <p>
+            Define un conjunto de enlaces de navegación. 
+            Tenga en cuenta que NO todos los enlaces de un documento deben estar dentro de un nav. Este
+            elemento está destinado solo para el bloque principal de enlaces de navegación. 
+            Ejemplo
+        </p>
+
+        <li><h3>&lt;p&gt; Colocar una abriviatura.</h3></li>
+        <p>
+            Define un párrafo. 
+            Los navegadores agregan automáticamente una línea en blanco antes y después de cada <p
+        </p>
+
+        <li><h3>&lt;script&gt; Colocar una abriviatura.</h3></li>
+        <p>
+            Se utiliza para incrustar un script del lado del cliente JavaScript
+            Contiene declaraciones de secuencias de comandos o apunta a un archivo de secuencia de comandos
+            externos a través del atributo src
+            Los usus comunes de JavaScript son manipulación de imágenes, la validación de formularios y los
+            cambis dinámicos de contenido. 
+            Nota: cuando un navegador lee una hoja de estilo, formateará el documento HTML de acuerdo con la
+            información de la hoja de estilo. Si se han definido algunas propiedades para el mismo selector
+            (elemento) en diferentes hojas de estilo, se utilizará el valor de la última hoja de estilo leída (consulte el
+            ejemplo a continuación).
+        </p>
+
+        <li><h3>&lt;style&gt; Colocar una abriviatura.</h3></li>
+        <p>
+            Se utiliza para definir la información de estilo CSS de un documento 
+            Dentro de style, especifica cómo deben mostrarse los elementos HTML en un navegador.
+            Ejemplo
+        </p>
+
+        <li><h3>&lt;section&gt; Colocar una abriviatura.</h3></li>
+        <p>
+            Define una sección en un documento
         </p>
     </ul>
         
