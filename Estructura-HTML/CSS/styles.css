@@ -1,0 +1,14 @@
+.caja{
+    border-radius: 10px;
+    border-color: #BAD5D6;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+    margin: 0.5%;
+}
+nav,aside{
+    width: 20%;
+}
+section{
+    width: 60%;
+}
