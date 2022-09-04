@@ -1,0 +1,42 @@
+body{
+    background-color: #75C9B7;
+}
+
+header, nav, section, aside, footer{
+    text-align: center;
+}
+
+nav, section, aside{
+    margin: 1%;
+}
+
+header{
+    background-color: #322E2F;
+    color: #C7DDCC;
+    width: 100%;
+    margin-top: -8px;
+}
+
+nav{
+    background-color: #C7DDCC;
+    color: #322E2F;
+    padding: 1.5%;
+}
+section{
+    background-color: #12A4D9;
+    width: 80%;
+}
+aside{
+    background-color: #D9138A;
+    width: 20%;
+    padding-bottom: 1%;
+}
+footer{
+    background-color: #E2D810;
+    padding: 1%;
+    margin-top: 1%;
+}
+div{
+    background-color: #C8DDCC;
+    display: flex;
+}
