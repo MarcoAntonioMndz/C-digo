@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Escuelas de código</title>
 </head>
 
 <body>
@@ -20,56 +20,71 @@
             height: 338px;
             display: flex;
         }
+        nav{
+            font-family: sans-serif;
+            color: #787471;
+            font-size: 15px;
 
+        }
+        footer{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+        div{
+            margin: 30px;
+            margin-left: 15%;
+        }
         .grid-item {
-            font-size: 30px;
+            font-size: 2em;
         }
 
         .item1 {
-            grid-column: 1;
-            grid-row: 1;
-            background-color: chocolate;
-        }
-
-        .item2 {
-            grid-column: 2 / span 3;
+            grid-column: 1 / span 3;
             grid-row: 1;
             text-align: left;
             color: white;
-            font-family: "liberation sans";
-            background-color: blueviolet;
+            font-weight: bold;
+            font-family: sans-serif;
         }
 
-        .item3 {
+        .item2 {
             grid-column: 2;
             grid-row: 2;
             text-align: right;
             color: white;
-            font-family: "liberation sans";
-            margin-top: -15%;
-            padding-top: 0px;
-            background-color: cadetblue;
+            font-family: sans-serif;
+            margin-top: -30px;
+            margin-left: 135px;
         }
 
-        .item4 {
+        .item3 {
             grid-column: 3;
             grid-row: 2;
             text-align: left;
             color: white;
             font-family: sans-serif;
-            margin-top: -11%;
-            padding-top: 0px;
-            background-color: aquamarine;
+            font-weight: 800;
+            margin-top: -48px;
         }
 
-        .item5 {
+        .item4 {
             grid-column: 3;
             grid-row: 3;
             text-align: left;
             color: white;
-            font-family: "liberation sans";
-            margin-top: -5%;
-            background-color: aliceblue;
+            font-family: sans-serif;
+            font-weight: 800;
+            margin-top: -60px;
+        }
+
+        .item5 {
+            grid-column: 3;
+            grid-row: 4;
+            text-align: left;
+            color: white;
+            font-family: sans-serif;
+            margin-top: -40px;
         }
     </style>
 
@@ -85,14 +100,27 @@
     </nav>
 
     <section style="display: flex;">
-        <div style="background-color: ;"><img src="imagenes/hero-vector.svg" align="right"></div>
-        <div class="grid-container" style="background-color: cyan;">
-            <span class="grid-item item2" style="font-size:40px;">APRENDE A PROGRAMAR</span>
-            <span class="grid-item item3">EN LAS</span>
-            <span class="grid-item item4" style="font-size:50px; font-weight:bold;">ESCUELAS<br>DE CÓDIGO</span>
-            <span class="grid-item item5">DE LA CDMX</span>
+        <div style="margin-right: 0px;"><img src="imagenes/hero-vector.svg" align="right"></div>
+        <div class="grid-container" style="margin-left: 0px;">
+                <span class="grid-item item1" style="font-size: 2.5em">APRENDE A PROGRAMAR</span>
+                <span class="grid-item item2">EN LAS</span>
+                <span class="grid-item item3" style="font-size: 4em;">ESCUELAS</span>
+                <span class="grid-item item4" style="font-size: 4em;">DE CÓDIGO</span>
+                <span class="grid-item item5">DE LA CDMX</span>
         </div>
     </section>
+
+    <footer>
+        <h2 style="color: #B08F5C; margin-bottom: -10px;">
+            ¿Quién se puede inscribir?
+        </h2>
+        <p style="color: #787471;">
+            <strong>
+                Cualquier persona que quiera aprender a programar código y cuente con 4-8 horas disponibles a la semana.
+            </strong> <br>
+            *Menores de edad deberán entrar a las instalaciones acompañados de un adulto.
+        </p>
+    </footer>
 </body>
 
 </html>
