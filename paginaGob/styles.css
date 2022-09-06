@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    margin-bottom: 5px;
+}
+
+.contenedor_nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav{
+    margin-top: 5px;
+    margin-inline-end: 12%;
+}
+
+#logo{
+    border-bottom: 1px solid #787471;
+    padding: 12px;
+    padding-left: 12%;
+}
+
+a{
+    margin: 4px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #787471;
+}
+
+section{
+    background: url(imagenes/hero.jpg) 100% / cover no-repeat;
+    margin-top: 10px;
+    height: 338px;
+    position: relative;
+}
+
+footer{
+    margin-top: 10px;
+    text-align: center;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+.item{
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+}
+
+#item1{
+    margin-top: 40px;
+    margin-right: 5px;
+    text-align: right;
+    grid-area: item1;
+}
+#item2{
+    grid-area: item2;
+    margin-top: 55px;
+    font-size: 40;
+    font-weight: bold;
+}
+#item3{
+    grid-area: item3;
+    text-align: right;
+    margin-right: 5px;
+    margin-top: -35px;
+}
+#item4{
+    grid-area: item4;
+    font-size: 50px;
+    margin-top: -40px;
+    font-weight: bold;
+}
+#item5{
+    margin-top: -40px;
+    grid-area: item5;
+}
+
+.contenedor{
+    position: absolute;
+    height: 80%;
+    width: 70%;
+    padding: 30px;
+    display: grid;
+    grid-template-areas:  
+    'item1 item2 item2'
+    'item1 item3 item4'
+    'item1 item3 item5'
+    ;
+}
+
