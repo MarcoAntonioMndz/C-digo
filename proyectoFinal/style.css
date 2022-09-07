@@ -4,49 +4,86 @@
 }
 
 header{
-    border: 1px solid black;
+    margin: 15px;
+    margin-bottom: 5px;
+}
+
+section{
     margin: 10px;
+}
+
+div{
+    margin-bottom: 15px;
+    height: 250px;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    border-top: 1px solid #bbbaba;
+    margin: 15px;
+    font-size: 12px;
+    font-family: sans-serif;
 }
 
 a{
     color: white;
 }
 
-section{
-    border: 1px solid black;
-    margin: 10px;
+h1{
+    padding-top: 50px;
 }
 
-div{
+h1, h2{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+p{
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 10px;
+    margin-top: 15px;
     margin-bottom: 15px;
-    border: 1px solid black;
-    height: 250px;
 }
 
-footer{
+.boton{
+    font-family: sans-serif;
     border: 1px solid black;
-    margin: 5px;
-}
-
-.boton {
-    border: none;
-    color: beige;
-    background-color: chocolate;
-    padding: 15px 32px;
+    border-radius: 50px;
+    color: black;
+    background-color: white;
+    padding: 8px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 10px;
     margin: 4px 2px;
     cursor: pointer;
 }
 
-button:hover{
+#boton2{
+    color: white;
+    background-color: #D40032;
+    border: 1px solid white;
+}
+
+.boton:hover{
     border: 2px solid white;
     background-color: black;
     color: white
 }
 
+#boton2:hover{
+    border: 2px solid #D40032;
+    background-color: white;
+    color: black;
+}
 
 #item1{
     background-color: #006241;
@@ -67,6 +104,7 @@ button:hover{
 
 #imagen{
     width: 50%;
+    background: url(imagenes/alebrije1.jpg) 100% / cover no-repeat;
 }
 
 #texto{
@@ -74,4 +112,34 @@ button:hover{
     text-align: center;
     margin-top: 45px;
     color: white;
+}
+
+.contenedor_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#itemHeader{
+    width: 35px;
+    height: 35px;
+}
+
+.textoHeader{
+    color: black;
+    font-size: 12px;
+    margin: 5px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contenedor_media{
+    display: flex;
+    height: 40px;
+}
+
+#itemMedia{
+    margin-top: 13px;
+    margin-right: 8px;
 }
